@@ -22,6 +22,7 @@ a:hover{
 span, h1,h2{
     font-family: "Momo Trust Display", sans-serif;
     font-weight: normal;
+    font-size: 25px;
 }
 
 main{
@@ -83,7 +84,7 @@ a {
 }
 
 .card h1, h2{
-
+    
     text-align: center;
     align-items: center;
     background-color: #DBB1BC;
