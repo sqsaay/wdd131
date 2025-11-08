@@ -1,0 +1,119 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+
+}
+
+span{
+    display: block;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+span, h2{
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: normal;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+footer{
+    background-color: #DBB1BC;
+    text-align: center;
+}
+
+footer span{
+    font-family: quicksand, sans-serif;
+    display: inline;
+}
+
+
+/*Classes for layout structure*/
+.parent{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;;
+}
+
+.top-banner{
+    background-color: #DBB1BC;
+    display: grid;
+    grid-column: 1/4;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;  
+}
+
+.top-banner nav {
+    background-color: #58504A;
+    height: 5rem;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;        
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 840px;
+    width: 100%;
+}
+
+.card h2{
+
+    text-align: center;
+    align-items: center;
+    background-color: #DBB1BC;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.card{
+    background-color: #58504A;
+    margin: .5rem;
+    border-radius: 10px;
+    border: .1rem solid black;
+}
+
+.card img{
+    float:right;
+    margin: 7rem auto;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.card p{
+    padding: 3rem;
+    align-content: center;
+    color: white;
+}
+
+.footer-section{
+    grid-column: 1/4;
+}
+
+/*IDs layout*/
+
+#course-title{
+    font-size: 1.5rem;
+    justify-self: center;
+}
+
