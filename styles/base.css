@@ -7,6 +7,10 @@
 
 }
 
+header{
+    text-align: center;
+}
+
 span{
     display: block;
 }
@@ -15,7 +19,7 @@ a:hover{
     text-decoration: underline;
 }
 
-span, h2{
+span, h1,h2{
     font-family: "Momo Trust Display", sans-serif;
     font-weight: normal;
 }
@@ -78,7 +82,7 @@ a {
     width: 100%;
 }
 
-.card h2{
+.card h1, h2{
 
     text-align: center;
     align-items: center;
@@ -88,7 +92,7 @@ a {
 }
 
 .card{
-    background-color: #58504A;
+    background-color: #58504a39;
     margin: .5rem;
     border-radius: 10px;
     border: .1rem solid black;
@@ -104,7 +108,7 @@ a {
 .card p{
     padding: 3rem;
     align-content: center;
-    color: white;
+    color: black;
 }
 
 .footer-section{
