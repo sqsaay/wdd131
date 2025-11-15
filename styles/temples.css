@@ -1,0 +1,35 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ header, footer{
+        background-color: #a7e2e4;
+        color: black;
+        padding: 1rem;
+    }
+
+
+img {
+    width: 250px;
+}
+
+.temples-img{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+h1, figcaption, footer {
+    text-align: center;
+}
