@@ -25,15 +25,26 @@ a:hover{
 }
 .container{
     display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-template-columns: 1fr;
 	grid-gap: 25px;
 	place-items: center;
     
 }
 
-h1, figcaption, footer {
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+figcaption{
+    text-align: center;
+    color: #111722;
+}
+
+footer{
     text-align: center;
 }
+
 
 img{
     width: 100%;
@@ -87,7 +98,7 @@ main{
     font-weight: bold;
 }
 
-.open{
+.open a{
     display: block;
 }
 
