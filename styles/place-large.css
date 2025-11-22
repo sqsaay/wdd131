@@ -1,4 +1,4 @@
-@media  (min-width: 500px) {
+@media  (min-width: 600px) {
 
 h2{
     text-decoration: none;
@@ -9,8 +9,8 @@ h2{
     position: absolute;
     min-width: 100px;
     height: auto;
-    top: 70%;
-    right: 20%;
+    bottom: 1rem;
+    right: 1rem;
     padding: 1rem;
     border: 2px solid var(--main-color);
     border-radius: 10px;
@@ -24,12 +24,12 @@ h2{
     min-width: 100px;
     position: absolute;
     height: auto;
-    left: 20%;
-    top: 8rem;
+    left: 1rem;
+    top: 1rem;
     padding: 1rem;
     border: 2px solid var(--main-color);
-    border-radius: 10px;
-    background-color: var(--secondary-color);
+        border-radius: 10px;
+        background-color: var(--secondary-color);
     color: var(--secondary-accent-color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }

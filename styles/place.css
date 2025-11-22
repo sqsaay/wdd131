@@ -8,11 +8,13 @@
 
 *{
     box-sizing: border-box;
-    max-width: 1200px;
     margin: 0 AUTO;
     padding: 0;
     font-family: quicksand, sans-serif;
     text-align: center;
+}
+main {
+    position: relative;
 }
 
 h1{
@@ -29,6 +31,7 @@ h2{
 section{
     background-color: var(--secondary-accent-color);
     color: var(--secondary-color);
+    padding: 10px 0;
 }
 
 img{
@@ -36,7 +39,6 @@ img{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    margin: 0;
     margin-top: 1rem;
 }
 
@@ -54,15 +56,18 @@ footer{
 
 .labels-one, .labels-two{
     text-align: right;
+    width: 100%;
 }
 
 .weather-columns,.place-columns{
+    padding: 10px;
     display: grid;
     grid-template-columns: auto auto;
     gap: 1rem;
 }
 .values-one, .values-two{
     text-align: left;
+    width: 100%;
 }
 .weather-icon{
     width: 100px;
