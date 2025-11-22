@@ -8,9 +8,11 @@
 
 *{
     box-sizing: border-box;
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 AUTO;
     padding: 0;
     font-family: quicksand, sans-serif;
+    text-align: center;
 }
 
 h1{
@@ -20,15 +22,21 @@ h1{
     padding: 1rem;
 }
 
+h2{
+    text-decoration: underline;
+}
+
 section{
     background-color: var(--secondary-accent-color);
     color: var(--secondary-color);
 }
 
 img{
+    display: block;
     width: 100%;
     height: auto;
     margin: 0 auto;
+    margin: 0;
     margin-top: 1rem;
 }
 
@@ -39,10 +47,25 @@ footer{
     padding: 1rem;
 }
 
-.weather-columns,.place-columns{
-    display: grid;
-    grid-template-columns: 9rem 13rem;
-    justify-content: left;
+/*Classes*/
+.weather-data, .place-data{
+    border-top: 5px solid var(--third-color);
 }
 
+.labels-one, .labels-two{
+    text-align: right;
+}
+
+.weather-columns,.place-columns{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+.values-one, .values-two{
+    text-align: left;
+}
+.weather-icon{
+    width: 100px;
+    justify-self: center;
+}
 

@@ -1,21 +1,30 @@
 @media  (min-width: 500px) {
+
+h2{
+    text-decoration: none;
+}
+
 .weather-data{
-    position: fixed;
-    width: auto;
-    right: 1rem;
-    top: 33rem;
+    min-width: 100px;
+    position: absolute;
+    min-width: 100px;
+    height: auto;
+    top: 70%;
+    right: 20%;
     padding: 1rem;
     border: 2px solid var(--main-color);
     border-radius: 10px;
     background-color: var(--secondary-color);
     color: var(--secondary-accent-color);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+   
 }
 
 .place-data{
-    position:fixed;
-    width: 25rem;
-    left: 1rem;
+    min-width: 100px;
+    position: absolute;
+    height: auto;
+    left: 20%;
     top: 8rem;
     padding: 1rem;
     border: 2px solid var(--main-color);
@@ -25,25 +34,39 @@
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 .weather-data h2{
-    position: absolute;
+    position: relative;
     background-color: black;
+    text-align: left;
     padding: 1rem;
     top: auto;
-    left: 1rem;
+    right: 1rem;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
 }
 
 .place-data h2{
-    position: absolute;
-    background-color: black;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.905);
+    text-align: left;
     padding: 1rem;
     top: auto;
-    left: 1rem;
+    right: 1rem;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.3);
 }
 .weather-data p{
-    padding: 2rem;
+    padding-top: 1rem;
 }
 
 .place-data p{
-    padding-top: 4rem;
+    padding-top: 1rem;
+}
+.weather-icon{
+    display: none;
+}
+.weather-icon-large::after{
+    content: "🌤️";
+}
+
+
+
 
 }
