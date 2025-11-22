@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country where I live - Samantha Salazar</title>
+    <meta name="description" content="The Country in which I live is Guatemala, there is a lot of nature including wildlife and vegatation">
+    <meta name="author" content="Samantha Salazar">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+
+    <!--Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Quicksand:wght@300..700&display=swap"
+        rel="stylesheet">
+    <!--End Google fonts  -->
+    
+</head>
+<body>
+    <header>
+        <h1>Guatemala</h1>
+    </header>
+    <main>
+        <picture>
+        <source media="(min-width: 500px)" srcset="images/guatemala-volcanos.webp">
+        <img src="images/arco-antigua-guatemala.webp" alt="Arco - Antigua Guatemala" style="height:auto;">
+        </picture>
+        <div class="place-data">
+        <section>
+        <h2>Data</h2>
+        <div class="place-columns">
+        <p><b>Area:<br>Population:<br>Capital:<br>Languages: <br>Currency:<br>Time Zone: 
+        <br>Calling code:<br>Internet TLD:</b></p>
+        <p>108,888 km²<br>18,798,461<br>Guatemala City<br>Spanish, Mayan Languages<br>Quetzal<br>UTC-6<br>+502<br>.gt</p>
+        </div>
+        </section>
+        </div>
+        <div class="weather-data">
+        <section> 
+        <h2>Weather</h2>
+        <object data="images/weather.svg" width="70" height="70"></object>
+        <div class="weather-columns">
+        <p><b>Temperature:<br>Conditions:<br>Wind:<br>Wind Chill</b></p>
+        <p><br><span id="temperature"></span><br>Mostly Clear<br>18 km/h<br>
+        <span id="wind"></span></p>
+        </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>🐾 Samantha Salazar 🐾 Guatemala City</p>
+        <p> Last update: <span id="lastModified"></span></p>
+    </footer>    
+</body>
+</html>

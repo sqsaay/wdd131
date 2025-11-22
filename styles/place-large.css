@@ -1,0 +1,49 @@
+@media  (min-width: 500px) {
+.weather-data{
+    position: fixed;
+    width: auto;
+    right: 1rem;
+    top: 33rem;
+    padding: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--secondary-accent-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.place-data{
+    position:fixed;
+    width: 25rem;
+    left: 1rem;
+    top: 8rem;
+    padding: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: var(--secondary-accent-color);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.weather-data h2{
+    position: absolute;
+    background-color: black;
+    padding: 1rem;
+    top: auto;
+    left: 1rem;
+}
+
+.place-data h2{
+    position: absolute;
+    background-color: black;
+    padding: 1rem;
+    top: auto;
+    left: 1rem;
+}
+.weather-data p{
+    padding: 2rem;
+}
+
+.place-data p{
+    padding-top: 4rem;
+
+}
