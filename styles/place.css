@@ -49,9 +49,16 @@ footer{
     padding: 1rem;
 }
 
+
 /*Classes*/
 .weather-data, .place-data{
     border-top: 5px solid var(--third-color);
+}
+.weather-data span {
+    color: var(--secondary-color)
+}
+footer span{
+    color: var(--secondary-accent-color);
 }
 
 .labels-one, .labels-two{
