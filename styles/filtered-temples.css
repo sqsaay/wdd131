@@ -1,0 +1,113 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+header p {
+    text-align: left;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+ header, footer{
+        background-color: #a7e2e4;
+        color: black;
+        padding: 2rem;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+.container-temples{
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 25px;
+	place-items: center;
+   
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+figcaption{
+    text-align: center;
+    color: #111722;
+}
+
+footer{
+    text-align: center;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+    
+}
+
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+
+ /*Small view navigation*/
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: black;
+ 	position: absolute;
+	top: 2.2rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.nav-burguer-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #E4B4C2;
+}
+
+.nav-burguer-view a{
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav-burguer-view a:hover{
+    background-color: #E0E1E9;
+    font-weight: bold;
+}
+
+.open a{
+    display: block;
+}
+
+.active::before{
+    content: "⛪";
+}
+
+.active{
+    background-color: #95c7c9;
+}
+
+

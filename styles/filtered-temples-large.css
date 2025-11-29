@@ -1,0 +1,47 @@
+@media (min-width: 500px){
+    header{
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+    }
+
+    #menu{
+        display: none;
+    }
+    .nav-burguer-view{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        flex-direction: row;
+        background: none;
+    }
+    
+    .nav-burguer-view a{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    li {
+        margin-left: 1rem;
+    }
+    
+
+    main{
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+
+    .container-temples{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    justify-content: center;
+
+   
+    
+}
+
+#hide-svg{
+    display: none;
+}
+
+}
