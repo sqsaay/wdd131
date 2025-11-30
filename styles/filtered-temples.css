@@ -54,7 +54,6 @@ img{
 }
 
 main{
-    max-width: auto;
     margin: 0 auto;
     padding: 0.5rem;
 }
@@ -109,6 +108,10 @@ main{
 }
 .active::after{
     content: "";
+}
+
+.temples{
+    background-color: #E4B4C2;
 }
 
 

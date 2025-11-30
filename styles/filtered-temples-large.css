@@ -31,11 +31,10 @@
     }
 
     .container-temples{
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 350px 350px 350px;
-    justify-content: center;    
+    gap: 20px;
 }
 
 #hide-svg{
