@@ -72,6 +72,14 @@ const temples = [
     imageUrl:
 	"https://churchofjesuschristtemples.org/assets/img/temples/coban-guatemala-temple/coban-guatemala-temple-46348-main.jpg"
   },
+  {
+	templeName: "Quetzaltenango Guatemala",
+    location: "Quetzaltenango, Guatemala",
+    dedicated: "2011, December, 11",
+    area: 7958,
+    imageUrl:
+	"https://churchofjesuschristtemples.org/assets/img/temples/quetzaltenango-guatemala-temple/quetzaltenango-guatemala-temple-15696-main.jpg"
+  },
 ];
 
 
