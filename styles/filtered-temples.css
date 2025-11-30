@@ -2,7 +2,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     text-decoration: none;
     list-style: none;
@@ -15,9 +14,9 @@ header p {
 }
 
  header, footer{
-        background-color: #a7e2e4;
-        color: black;
-        padding: 2rem;
+    background-color: #a7e2e4;
+    color: black;
+    padding: 2rem;
 }
 
 a:hover{
@@ -48,12 +47,14 @@ footer{
 
 img{
     width: 100%;
-    height: auto;
+    object-fit: cover;
+    max-height: 150px;
+    
     
 }
 
 main{
-    max-width: 800px;
+    max-width: auto;
     margin: 0 auto;
     padding: 0.5rem;
 }
@@ -96,6 +97,7 @@ main{
 .nav-burguer-view a:hover{
     background-color: #E0E1E9;
     font-weight: bold;
+
 }
 
 .open a{
@@ -103,11 +105,11 @@ main{
 }
 
 .active::before{
-    content: "⛪";
+    content: "➡️";
+}
+.active::after{
+    content: "";
 }
 
-.active{
-    background-color: #95c7c9;
-}
 
 
