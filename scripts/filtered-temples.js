@@ -78,6 +78,12 @@ const temples = [
 //Create temple cards
 createTempleCard(temples);
 
+//Create Home temple cards
+const homeLink = document.querySelector("#home");
+homeLink.addEventListener("click", ()=>{
+	createTempleCard(temples);
+});
+
 //Create Old temple cards
 const oldLink = document.querySelector("#old");
 oldLink.addEventListener("click", () =>{
@@ -119,7 +125,7 @@ let name = document.createElement("h3");
 let location = document.createElement("p");
 let dedication = document.createElement("p");
 let area = document.createElement("p");
-let img = document. createElement("img");
+let img = document.createElement("img");
 
 name.textContent = temple.templeName;
 location.innerHTML = `<span class="label">Location: </span>${temple.location}`;

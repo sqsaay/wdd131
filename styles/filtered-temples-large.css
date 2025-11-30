@@ -1,21 +1,22 @@
-@media (min-width: 500px){
-    header{
+@media (min-width: 500px) {
+    header {
         display: grid;
         grid-template-columns: 1fr 3fr;
     }
 
-    #menu{
+    #menu {
         display: none;
     }
-    .nav-burguer-view{
+
+    .nav-burguer-view {
         display: flex;
         justify-content: right;
         align-items: center;
         flex-direction: row;
         background: none;
     }
-    
-    .nav-burguer-view a{
+
+    .nav-burguer-view a {
         display: block;
         flex: 1 1 100%;
     }
@@ -23,22 +24,28 @@
     li {
         margin-left: 1rem;
     }
-    
 
-    main{
+
+    main {
         display: grid;
         grid-template-rows: auto auto;
     }
 
-    .container-temples{
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 350px 350px 350px;
-    gap: 20px;
+    .container-temples {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    #hide-svg {
+        display: none;
+    }
+
+    .tab:target, .tab:focus{
+        background-color: #E0E1E9;
+        font-weight: bold;
+    }
+
 }
 
-#hide-svg{
-    display: none;
-}
-
-}
