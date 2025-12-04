@@ -64,7 +64,13 @@ body{
     color: var(--main-color);
     text-align: center;
 }
-
+.welcome-container img{
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 .welcome-container p{
     font-size: 1.2rem;
     line-height: 1.6;
