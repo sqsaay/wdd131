@@ -148,7 +148,7 @@ card.appendChild(location);
 card.appendChild(dedication);
 card.appendChild(area);
 card.appendChild(img);
-document. querySelector(".container-temples").appendChild(card);
+document.querySelector(".container-temples").appendChild(card);
 });
 }
 

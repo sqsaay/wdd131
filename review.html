@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <meta name="description"
+        content="Submit your product review using our comprehensive form including ratings, features, and comments.">
+    <meta name="author" content="Samantha Salazar">
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <!--Google fonts  Titles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--End Google fonts  -->
+    <!--Google fonts  Body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--End Google fonts  -->
+</head>
+
+<body>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+    <p>Thank you for submitting the review. We will get back to you as soon as possible.</p>
+    </main>
+
+    <footer>
+        <p>©️<span id="currentyear"></span>🐾 Samantha Salazar 🐾 Guatemala City</p>
+        <p> Last update: <span id="lastModified"></span></p>
+    </footer>
+      <script>
+    // Retrieve current count from localStorage (default to 0 if not set)
+    let count = localStorage.getItem("reviewCount") || 0;
+
+    // Convert to number and increment
+    count = parseInt(count) + 1;
+
+    // Save updated count back to localStorage
+    localStorage.setItem("reviewCount", count);
+
+    // Display the count on the page
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+
+</body>
+
+</html>
