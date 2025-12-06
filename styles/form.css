@@ -27,7 +27,7 @@ main p{
 }
 
 form {
-    max-width: 600px;
+    
     margin: auto;
     color: var(--secondary-accent-color);
     background-color: var(--secondary-color);
@@ -71,8 +71,8 @@ textarea {
 
 .rating-group label {
     display: flex;
-    flex-direction: column;
-    font-size: 1.5rem;
+    flex-direction: column-reverse;
+    font-size: smaller;
     color: var(--secondary-accent-color);
     text-align: center;
 }
