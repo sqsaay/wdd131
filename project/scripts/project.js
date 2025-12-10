@@ -11,35 +11,13 @@ const hamButton = document.querySelector("#menu");
 const navigation = document.querySelector(".nav-burguer-view");
 
 hamButton.addEventListener("click", () => {
-	navigation.classList.toggle("open");
-	hamButton.classList.toggle("open");
+  navigation.classList.toggle("open");
+  hamButton.classList.toggle("open");
 });
 
 
-//Array of Objects
-const genres = [
-    {
-        id: "gr-001",
-        name: "Pop",
-    },
-    {
-        id: "gr-002",
-        name: "Rock",
-    },
-    {
-        id: "gr-003",
-        name: "Jazz",
-    },
-    {
-        id: "gr-004",
-        name: "Classical",
-    },
-    {
-        id: "gr-005",
-        name: "Hip-Hop",
-    },
-    
-];
+
+//Array of Artists
 
 const artists = [
   {
@@ -80,11 +58,13 @@ const artists = [
 
 
 //Create Artist cards
-createArtistCard(artists);
+document.addEventListener("DOMContentLoaded", () => {
+  createArtistCard(artists);
+});
 
 
 //Compute artirsts cards
-function createArtistCard() {
+function createArtistCard(artists) {
   document.querySelector(".container-artists").innerHTML = "";
   artists.forEach(artist => {
     let card = document.createElement("section");
@@ -99,7 +79,7 @@ function createArtistCard() {
     onTour.innerHTML = `<span class="label">On tour:</span> ${artist.onTour}`;
     comment.innerHTML = `<span class="label">Comment:</span> ${artist.comment}`;
     img.setAttribute("src", artist.imageUrl);
-    img.setAttribute("alt", '${artist.artistName} Concert');
+    img.setAttribute("alt", `${artist.artistName} Concert`);
     img.setAttribute("loading", "lazy");
 
     card.appendChild(artistName);
@@ -109,7 +89,41 @@ function createArtistCard() {
     card.appendChild(img);
     document.querySelector(".container-artists").appendChild(card);
   });
+};
+
+//Array of Genres
+const genres = [
+  {
+    id: "gr-001",
+    name: "Pop",
+  },
+  {
+    id: "gr-002",
+    name: "Rock",
+  },
+  {
+    id: "gr-003",
+    name: "Jazz",
+  },
+  {
+    id: "gr-004",
+    name: "Classical",
+  },
+  {
+    id: "gr-005",
+    name: "Hip-Hop",
+  },
+
+];
+//Populate genres dropdown
+const genreSelect = document.getElementById("genre");
+genres.forEach((genre) => {
+  const option = document.createElement("option");
+  option.value = genre.name;
+  option.textContent = genre.name;
+  genreSelect.appendChild(option);
 }
+);
 
 //Counter for reviews
 document.addEventListener("DOMContentLoaded", () => {
@@ -124,3 +138,4 @@ document.addEventListener("DOMContentLoaded", () => {
     counterElement.textContent = count;
   }
 });
+
