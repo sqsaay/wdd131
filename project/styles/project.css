@@ -96,11 +96,12 @@ body{
     border-radius: 8px;
     padding: 10px;
 }
-.welcome-container-images figure{
+.groups{
     display: grid;
-    grid-template-rows: 1fr 1fr auto;
+    grid-template-rows: 2fr .5fr;
     justify-items: center;
-    align-items: center;
+    border: 1px solid var(--secondary-accent-color);
+    border-radius: 20px;
 }
 
 .welcome-container-images a{

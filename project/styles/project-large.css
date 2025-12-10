@@ -5,15 +5,16 @@
         display: none;
     }
 
-  header img, h1{
-    justify-self: center;
-  }
+    header img,
+    h1 {
+        justify-self: center;
+    }
 
-  header h1{
-    width: 300px;
-    font-size: normal;
-  }
-   
+    header h1 {
+        width: 300px;
+        font-size: normal;
+    }
+
     /*Nav bar for larger screens*/
     .nav-burguer-view {
         display: flex;
@@ -29,13 +30,7 @@
         color: var(--tertiary-accent-color);
     }
 
-    .nav-burguer-view a.active{
-        background-color: aliceblue;
-        color: black;
-    }
-
-    .tab:hover,
-    .tab:active, .nav-burguer-view a.active{
+    .nav-burguer-view a.active {
         background-color: var(--secondary-color);
         color: var(--secondary-accent-color);
         font-weight: bold;
