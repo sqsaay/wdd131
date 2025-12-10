@@ -17,6 +17,30 @@ hamButton.addEventListener("click", () => {
 
 
 //Array of Artist Objects
+const genres = [
+    {
+        id: "gr-001",
+        name: "Pop",
+    },
+    {
+        id: "gr-002",
+        name: "Rock",
+    },
+    {
+        id: "gr-003",
+        name: "Jazz",
+    },
+    {
+        id: "gr-004",
+        name: "Classical",
+    },
+    {
+        id: "gr-005",
+        name: "Hip-Hop",
+    },
+    
+];
+
 const artists = [
   {
     artistName: "Twenty One Pilots",
@@ -88,38 +112,7 @@ function createArtistCard() {
 }
 
 //Array for artists
-const genres = [
-    {
-        id: "gr-001",
-        name: "Pop",
-    },
-    {
-        id: "gr-002",
-        name: "Rock",
-    },
-    {
-        id: "gr-003",
-        name: "Jazz",
-    },
-    {
-        id: "gr-004",
-        name: "Classical",
-    },
-    {
-        id: "gr-005",
-        name: "Hip-Hop",
-    },
-    
-];
 
-const genreSelect = document.getElementById("genre");
-//Populate genre dropdown
-genres.forEach(genre => {
-    let option = document.createElement("option");
-    option.value = genre.id;
-    option.textContent = genre.name;
-    genreSelect.appendChild(option);
-});
 
 //Counter for reviews
 document.addEventListener("DOMContentLoaded", () => {
