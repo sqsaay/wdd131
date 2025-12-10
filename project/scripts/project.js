@@ -16,7 +16,7 @@ hamButton.addEventListener("click", () => {
 });
 
 
-//Array of Artist Objects
+//Array of Objects
 const genres = [
     {
         id: "gr-001",
@@ -110,9 +110,6 @@ function createArtistCard() {
     document.querySelector(".container-artists").appendChild(card);
   });
 }
-
-//Array for artists
-
 
 //Counter for reviews
 document.addEventListener("DOMContentLoaded", () => {

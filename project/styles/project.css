@@ -224,6 +224,11 @@ input[type="submit"] {
 
 
 /*Artist list*/
+.container-artists img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 .container-artists, .container-artists p {
     text-align: left;
     max-width: 800px;
