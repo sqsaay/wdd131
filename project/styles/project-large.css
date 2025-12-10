@@ -1,0 +1,45 @@
+@media (min-width: 800px) {
+
+    /* Burger button hidden on desktop */
+      #menu {
+        display: none;
+    }
+
+
+    /*Nav bar*/
+
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+        color: var(--accent-color);
+    }
+
+    .nav-bar img {
+        justify-self: right;
+    }
+
+    .nav-bar nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .welcome-container-images {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: var(--secondary-color);
+        gap: 20px;
+    }
+
+    .container-artists {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+}

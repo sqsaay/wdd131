@@ -26,7 +26,6 @@ a:hover{
 	grid-template-columns: 1fr;
 	grid-gap: 25px;
 	place-items: center;
-   
 }
 
 h1 {
@@ -61,8 +60,6 @@ section{
     width: 100%;
     height: 300px;
     box-sizing: border-box;
-   
-    
 }
 
 section p{
@@ -75,7 +72,7 @@ section h3{
     text-align: center;
 }
 
- /*Small view navigation*/
+/*Small view navigation*/
 #menu {
 	font-size: 1.5rem;
 	border: 0;

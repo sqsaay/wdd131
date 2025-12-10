@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Follow your concerts - Samantha Salazar</title>
+    <meta name="description"
+        content="Your ultimate guide to live music concerts, featuring artist info, concert schedules, and ticketing details.">
+    <meta name="author" content="Samantha Salazar">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
+    <!--Google fonts  Titles-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Quicksand:wght@700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--End Google fonts  -->
+    <!--Google fonts  Body-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!--End Google fonts  -->
+</head>
+
+<body>
+  <header>
+        <button id="menu" aria-label="Open menu"></button>
+        <div class="nav-bar">
+            <img src="images/guide-music-logo.png" alt="Guide Music Logo" height="100">
+            <nav>
+                <ul class="nav-burguer-view">
+                    <li><a href="home.html" id="home" class="tab">Home</a></li>
+                    <li><a href="artist.html" id="artist" class="tab">Artists</a></li>
+                    <li><a href="join-us.html" id="join-us" class="tab">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="welcome-container">
+            <h1>Join Us</h1>
+            <form method="get" action="review.html">
+
+                <label for="username">Your Name: *</label>
+                <input type="text" id="username" name="username" required>
+                <label for="email">Your email address: *</label>
+                <input type="text" id="email" name="email" required>
+                <label for="genre">Genre you like: *</label>
+                <select id="genre" name="genre" required>
+                    <option value="" disabled selected>Select a Product ...</option>
+                </select>
+
+                <div>Rate how much you loved the concert: *</div>
+                <div class="rating-group">
+                    <label><input type="radio" id="rating1" name="rating" value="1" required> ☆</label>
+                    <label><input type="radio" id="rating2" name="rating" value="2" required> ☆☆</label>
+                    <label><input type="radio" id="rating3" name="rating" value="3" required> ☆☆☆</label>
+                    <label><input type="radio" id="rating4" name="rating" value="4" required> ☆☆☆☆</label>
+                    <label><input type="radio" id="rating5" name="rating" value="5" required> ☆☆☆☆☆</label>
+                </div>
+
+                <label for="artistName">Artist name: *</label>
+                <input type="text" id="artistName" name="artistName" required>
+
+                <div>What you liked it the most of the concert (check all that apply):</div>
+                <label><input type="checkbox" id="feature1" name="features" value="show"> Show</label>
+                <label><input type="checkbox" id="feature2" name="features" value="price"> Price</label>
+                <label><input type="checkbox" id="feature3" name="features" value="setlist"> Setlist</label>
+                <label><input type="checkbox" id="feature4" name="features" value="Venue"> Venue</label>
+
+
+                <label for="review">Written Review (Optional):</label>
+                <textarea id="review" name="review" rows="4" cols="50"></textarea>
+
+
+                <input type="submit" value="Join Us Review">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>©️<span id="currentyear"></span>🐾 Samantha Salazar 🐾 Guatemala City</p>
+        <p> Last update: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

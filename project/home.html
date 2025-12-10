@@ -8,9 +8,9 @@
     <meta name="description"
         content="Your ultimate guide to live music concerts, featuring artist info, concert schedules, and ticketing details.">
     <meta name="author" content="Samantha Salazar">
-    <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="stylesheet" href="styles/siteplan-large.css">
-    <script src="scripts/siteplan.js" defer></script>
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <script src="scripts/project.js" defer></script>
     <!--Google fonts  Titles-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,15 +29,17 @@
 
 <body>
     <header>
-        <p>Site Plan</p>
-        <img src="images/guide-music-logo.png" alt="Guide Music Logo" height="100">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="artist.html">Artist Concerts</a></li>
-                <li><a href="join-us.html">Join Us</a></li>
-            </ul>
-        </nav>
+        <button id="menu" aria-label="Open menu"></button>
+        <div class="nav-bar">
+            <img src="images/guide-music-logo.png" alt="Guide Music Logo" height="100">
+            <nav>
+                <ul class="nav-burguer-view">
+                    <li><a href="home.html" id="home" class="tab">Home</a></li>
+                    <li><a href="artist.html" id="artist" class="tab">Artists</a></li>
+                    <li><a href="join-us.html" id="join-us" class="tab">Join Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="welcome-container">
@@ -47,17 +49,25 @@
                 updated on your favorite artists, upcoming concert schedules, and ticketing details. Whether you're a
                 casual listener or a die-hard fan, our site is designed to enhance your concert-going experience.</p>
             <div class="welcome-container-images">
-                <img src="images/concert-square.webp" alt="Artist Concerts Page" height="500">
-                <img src="images/concert-square-2.webp" alt="Join Us Page" height="500">
-            </div>
-            <div class="welcome-container-questions">
-                <p>Where can I join to this concerts' radar?</p>
-                <p>How can I stay updated on my favorite artists' live performances?</p>
-                <p>What are the best ways to purchase concert tickets?</p>
+                <figure>
+                    <img src="images/concert-square.webp" alt="Peter's concert" height="500">
+                    <figcaption>Where can I join to this concerts' radar?</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/concert-square-2.webp" alt="Joseph's concert" height="500">
+                    <figcaption>How can I stay updated on my favorite artists' live performances?</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/concert-square-3.webp" alt="Laura's concert" height="500">
+                    <figcaption>What are the best ways to purchase concert tickets?</caption>
+                </figure>
             </div>
         </div>
     </main>
-    <footer>© 2025 - Samantha Salazar </footer>
+    <footer class="footer-section">
+        <p>©️<span id="currentyear"></span>🐾 Samantha Salazar 🐾 Guatemala City</p>
+        <p> Last update: <span id="lastModified"></span></p>
+    </footer>
 </body>
 
 </html>
