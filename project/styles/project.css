@@ -225,7 +225,7 @@ input[type="submit"] {
 
 /*Artist list*/
 .container-artists img{
-    max-width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
 }
