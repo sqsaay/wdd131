@@ -91,39 +91,7 @@ function createArtistCard(artists) {
   });
 };
 
-//Array of Genres
-const genres = [
-  {
-    id: "gr-001",
-    name: "Pop",
-  },
-  {
-    id: "gr-002",
-    name: "Rock",
-  },
-  {
-    id: "gr-003",
-    name: "Jazz",
-  },
-  {
-    id: "gr-004",
-    name: "Classical",
-  },
-  {
-    id: "gr-005",
-    name: "Hip-Hop",
-  },
 
-];
-//Populate genres dropdown
-const genreSelect = document.getElementById("genre");
-genres.forEach((genre) => {
-  const option = document.createElement("option");
-  option.value = genre.name;
-  option.textContent = genre.name;
-  genreSelect.appendChild(option);
-}
-);
 
 //Counter for reviews
 document.addEventListener("DOMContentLoaded", () => {
